@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Panel</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script>
+        // 📌 `it-layout.html` içeriğini yükle
+        $(document).ready(function () {
+            $("body").load("it-layout.html", function () {
+                // 📌 Layout yüklendikten sonra içerik bölümüne `it-dashboard.html`'i ekle
+                $("#content").load("it-dashboard.html");
+            });
+        });
+    </script>
+    <script src="js/it-panel.js"></script>
+</body>
+</html>

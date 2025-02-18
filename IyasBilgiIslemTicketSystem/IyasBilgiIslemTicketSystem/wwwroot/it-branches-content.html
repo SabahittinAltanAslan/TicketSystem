@@ -1,0 +1,62 @@
+﻿<div class="container mt-4">
+    <h3 class="mb-4">Şube Yönetimi</h3>
+
+    <!-- 📌 Şube Ekle Butonu (Sadece ITEmployee için görünecek) -->
+    <button id="addBranchBtn" class="btn btn-success mb-3" style="display: none;">+ Şube Ekle</button>
+
+    <table id="branchesTable" class="display table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Şube Adı</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Veri API'den dinamik olarak yüklenecek -->
+        </tbody>
+    </table>
+</div>
+
+<!-- 📌 Şube Ekle Modalı -->
+<div class="modal fade" id="branchModal" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="branchModalLabel">Yeni Şube Ekle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="branchForm">
+                    <div class="mb-3">
+                        <label for="branchName" class="form-label">Şube Adı</label>
+                        <input type="text" class="form-control" id="branchName" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 📌 Şube Güncelleme Modalı -->
+<div class="modal fade" id="updateBranchModal" tabindex="-1" aria-labelledby="updateBranchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateBranchModalLabel">Şube Güncelle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="updateBranchForm">
+                    <input type="hidden" id="updateBranchId">
+                    <div class="mb-3">
+                        <label for="updateBranchName" class="form-label">Şube Adı</label>
+                        <input type="text" class="form-control" id="updateBranchName" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Güncelle</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

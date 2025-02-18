@@ -1,0 +1,18 @@
+﻿/* 📌 Sayfa Başlık Stili */
+h3 {
+    color: #343a40;
+    font-weight: bold;
+}
+
+/* 📌 Şube Ekle Butonu */
+#addBranchBtn {
+    float: right;
+}
+
+/* 📌 DataTables Özelleştirmesi */
+#branchesTable {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}

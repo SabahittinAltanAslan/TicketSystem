@@ -1,0 +1,64 @@
+﻿/* 📌 IT Panel Stilleri */
+#wrapper {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: #343a40; /* Sidebar koyu gri */
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar-heading {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.list-group-item {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #343a40;
+    border: none;
+}
+
+    .list-group-item:hover {
+        background-color: #575757 !important;
+    }
+
+/* 📌 İçerik Alanı */
+#page-content-wrapper {
+    margin-left: 250px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* 📌 Grafik Kutuları */
+canvas {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 Navbar Üst Alan */
+.navbar {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 Çıkış Butonu */
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+    .logout-btn:hover {
+        background-color: #bb2d3b;
+    }

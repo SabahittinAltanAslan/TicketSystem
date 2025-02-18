@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İyaş IT Panel - Giriş</title>
+
+    <!-- 📌 Bootstrap CDN'den yükleyelim -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- 📌 Özel CSS -->
+    <link rel="stylesheet" href="css/login_style.css">
+
+    <!-- 📌 jQuery ve Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="text-center mb-3">
+            <img src="assets/iyas_logo.png" alt="İyaş Logo" class="img-fluid" style="max-height: 80px;">
+        </div>
+        <h3 class="text-center">IT Panel Girişi</h3>
+        <div id="error-msg" class="alert alert-danger d-none">Geçersiz giriş!</div>
+        <form id="login-form">
+            <div class="mb-3">
+                <label class="form-label">E-Posta</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Şifre</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Giriş Yap</button>
+        </form>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
